@@ -1,0 +1,134 @@
+body {
+	background-image: url("images/bg-prints.png");
+}
+
+header, article, footer, fieldset {
+	background-color: #fefdef;
+	border: none;
+	box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.5);
+	margin-bottom: 10px;
+	padding: 5px 10px; /* top-bottom, left-right*/
+	color: black;
+	font-family: Verdana;
+	font-size: 0.9em;
+}
+
+/* overwrite footer to no margin-bottom */
+footer {
+	margin-bottom: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	float: left;
+	list-style-type: none;
+	color: #84073A;
+}
+
+input {
+	background-color: transparent;
+	border: none;
+}
+
+input:focus {
+	outline: none;
+}
+
+.fa {
+	font-size: 30px;
+	margin: 5px;
+	color: #84073A;
+}
+
+header, .article-nav, .error {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer>ul {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 15px;
+}
+
+#comment {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	height: 70vh;
+	border: none;
+}
+
+.status {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 82%;
+}
+
+/*	STYLING FOR REGISTER AND LOGIN PAGE	*/
+form {
+	text-align: center;
+}
+
+.input-group label {
+	display: block;
+}
+
+input {
+	margin: 5px;
+	padding: 5px;
+}
+
+.register-login {
+	box-shadow: inset 0.5px 1px 1px 1px gray;
+	width: 100%;
+	text-align: center;
+}
+
+/* For mobile phones: */
+@media only screen and (max-width: 700px) {
+	body {
+		margin: 0;
+		font-size: 0.8em;
+	}
+	.web-view {
+		display: none;
+	}
+}
+
+/* For tablets */
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+	body {
+		margin-left: 12%;
+		margin-right: 12%;
+		font-size: 0.8em;
+	}
+	.mobile-view {
+		display: none;
+	}
+}
+
+/* For laptop/desktop: */
+@media only screen and (min-width: 1001px) and (max-width:1500px) {
+	body {
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+	.mobile-view {
+		display: none;
+	}
+}
