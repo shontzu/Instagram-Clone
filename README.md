@@ -1,2 +1,2 @@
 # Instagram-Clone
-This is a XAMPP/PHP project
+Please provide attribution as stated in LICENSE.txt if you were to use this in your assignment 
